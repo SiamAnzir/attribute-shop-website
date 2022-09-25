@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Nav, Navbar, NavItem} from "react-bootstrap";
+import {Container, Nav, Navbar, NavItem,Form ,Button} from "react-bootstrap";
 import logo from "../assets/attributelogo.png";
 
 const NavBar = () => {
@@ -12,6 +12,19 @@ const NavBar = () => {
                     </Nav.Link>
                 </Nav>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                    <div>
+                        <Form className="d-flex">
+                            <Form.Control
+                                type="search"
+                                placeholder="Search"
+                                className="me-2"
+                                aria-label="Search"
+                            />
+                            <Button variant="outline-danger">Search</Button>
+                        </Form>
+                    </div>
+                </Navbar.Collapse>
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                     <Nav>
                         <NavItem> <Nav.Link href="#testimonials" className="text-white text-decoration-none"> Services/Products  </Nav.Link> </NavItem>
