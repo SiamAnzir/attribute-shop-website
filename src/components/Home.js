@@ -2,6 +2,8 @@ import React from "react";
 import {Carousel, Container} from "react-bootstrap";
 import attribute from "../assets/PNG.png";
 import slideImage from "../assets/blackImage.png";
+import cover from "../assets/cover.jpg";
+import coverTwo from "../assets/coverTwo.jpg";
 
 const Home = () => {
     return (
@@ -10,43 +12,29 @@ const Home = () => {
             <Container>
                 <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 mx-auto mt-5">
                     <Carousel>
-                        <Carousel.Item interval={1000}>
+                        <Carousel.Item interval={3000}>
                             <img
                                 className="d-block w-100"
-                                src={slideImage}
+                                src={cover}
                                 alt="First slide"
-                                height={350}
+                                style={{maxHeight:'35vw'}}
                             />
-                            <Carousel.Caption>
-                                <h3>First slide label</h3>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item interval={500}>
+                        <Carousel.Item interval={3000}>
                             <img
                                 className="d-block w-100"
-                                src={slideImage}
+                                src={coverTwo}
                                 alt="Second slide"
-                                height={350}
+                                style={{maxHeight:'35vw'}}
                             />
-                            <Carousel.Caption>
-                                <h3>Second slide label</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item>
+                        <Carousel.Item interval={3000}>
                             <img
                                 className="d-block w-100"
-                                src={slideImage}
+                                src={cover}
                                 alt="Third slide"
-                                height={350}
+                                style={{maxHeight:'35vw'}}
                             />
-                            <Carousel.Caption>
-                                <h3>Third slide label</h3>
-                                <p>
-                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                                </p>
-                            </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
                 </div>
