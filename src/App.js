@@ -3,6 +3,7 @@ import NavBar from "./components/Navbar";
 import Home from "./components/Home";
 import Products from "./components/Products";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import './App.css';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
             <Home></Home>
             <Products></Products>
             <Contact></Contact>
+            <Footer></Footer>
         </section>
     </>
   );
