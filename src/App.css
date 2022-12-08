@@ -31,7 +31,47 @@
 .App-link {
   color: #61dafb;
 }
+.footer_primary {
+  background: black;
+}
 
+.footer_primary p {
+  color: white;
+  margin-bottom: 8px;
+}
+
+.social_icon img {
+  width: 50px;
+  padding: 5px;
+  margin: 4px;
+  background-color: darkred;
+  border-radius: 40%;
+  transition: 0.5s all ease-in-out;
+}
+.social_icon img:hover{
+  transform: scale(1.2);
+}
+
+.individual_column_first {
+  padding: 2% 0 2% 0;
+}
+
+.individual_column_middle {
+  padding: 2% 0 0% 0;
+  transition: 0.5s all ease-in-out;
+}
+.individual_column_middle p:hover {
+  transform: scale(1.1);
+}
+
+.individual_column_last {
+  padding: 2% 0 0% 0;
+}
+.contact-us-img {
+  height: 25px;
+  padding: 0px;
+  border-radius: 29px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
