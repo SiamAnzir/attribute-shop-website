@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,8 +8,14 @@ import {
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { db } from "../firebase";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [contactNo, setContactNo] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loader, setLoader] = useState(false);
   const position = [23.720381, 90.405258];
 
   const markerIcon = new L.Icon({
@@ -20,7 +26,27 @@ const Contact = () => {
   });
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message Send Successfully");
+    setLoader(true);
+
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        contactNo: contactNo,
+        message: message,
+      })
+      .then(() => {
+        setLoader(false);
+        alert("Your message has been submitted");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
+    setName("");
+    setEmail("");
+    setMessage("");
+    setContactNo("");
   };
   return (
     <section id="contact" className="mt-5">
@@ -74,6 +100,8 @@ const Contact = () => {
                   required
                   type="text"
                   placeholder="Type your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </Form.Group>
               <Form.Group
@@ -85,6 +113,8 @@ const Contact = () => {
                   required
                   type="email"
                   placeholder="name@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </Form.Group>
               <Form.Group
@@ -92,17 +122,36 @@ const Contact = () => {
                 controlId="exampleForm.ControlInput1"
               >
                 <Form.Label>Phone Number</Form.Label>
-                <Form.Control type="number" placeholder="01677409232" />
+                <Form.Control
+                  required
+                  type="number"
+                  placeholder="01677409232"
+                  value={contactNo}
+                  onChange={(e) => setContactNo(e.target.value)}
+                />
               </Form.Group>
               <Form.Group
                 className="mb-2"
                 controlId="exampleForm.ControlTextarea1"
               >
                 <Form.Label>Message</Form.Label>
-                <Form.Control required type="text" as="textarea" rows={3} />
+                <Form.Control
+                  required
+                  type="text"
+                  as="textarea"
+                  rows={3}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
               </Form.Group>
               <div className="d-grid gap-2">
-                <Button type="submit"> Submit </Button>
+                <Button
+                  type="submit"
+                  style={{ background: loader ? "#ccc" : "" }}
+                >
+                  {" "}
+                  Submit{" "}
+                </Button>
               </div>
             </Form>
           </Col>
