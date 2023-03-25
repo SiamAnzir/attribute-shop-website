@@ -3,6 +3,9 @@ import {Carousel, Container} from "react-bootstrap";
 import attribute from "../assets/PNG.png";
 import slideImage from "../assets/blackImage.png";
 import cover from "../assets/cover.jpg";
+import sliderOne from "../assets/Branding-01.jpg";
+import sliderTwo from "../assets/Branding-02.jpg";
+import sliderThree from "../assets/Branding-03.jpg";
 import coverTwo from "../assets/coverTwo.jpg";
 
 const Home = () => {
@@ -23,7 +26,7 @@ const Home = () => {
                         <Carousel.Item interval={3000}>
                             <img
                                 className="d-block w-100"
-                                src={coverTwo}
+                                src={sliderOne}
                                 alt="Second slide"
                                 style={{maxHeight:'35vw'}}
                             />
@@ -31,7 +34,15 @@ const Home = () => {
                         <Carousel.Item interval={3000}>
                             <img
                                 className="d-block w-100"
-                                src={cover}
+                                src={sliderTwo}
+                                alt="Third slide"
+                                style={{maxHeight:'35vw'}}
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item interval={3000}>
+                            <img
+                                className="d-block w-100"
+                                src={sliderThree}
                                 alt="Third slide"
                                 style={{maxHeight:'35vw'}}
                             />
