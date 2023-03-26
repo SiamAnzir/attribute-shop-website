@@ -10,18 +10,29 @@ import polo from "../assets/icon/polo.png";
 import printPress from "../assets/icon/printing & press works.png";
 import tShirt from "../assets/icon/t-shirt.png";
 import umbrella from "../assets/icon/umbrella.png";
-
+import awardImage from "../assets/products/Crest Ad.jpg";
+import capImage from "../assets/products/Cap Ad.jpg";
+import clockImage from "../assets/products/Wall Clock Ad.jpg";
+import giftBoxImage from "../assets/products/Corporate Gift Box.jpg";
+import idCardImage from "../assets/products/ID Card  Ad.jpg";
+import keyRingImage from "../assets/products/Key Ring Ad.jpg";
+import mugImage from "../assets/products/Mug Ad.jpg";
+import poloImage from "../assets/products/Polo Shirt Ad.jpg";
+import tShirtImage from "../assets/products/T-Shirt  Ad.jpg";
+import umbrellaImage from "../assets/products/Umbrella Ad.jpg";
 export const allProducts = [
     {
         id:1,
         categoryName:'Awards',
+        description: "Add a touch of elegance to your space with our custom-made acrylic works, perfect for corporate or personal use.",
         subCategories: [
             {
                 serviceId:'',
                 serviceName:'',
             }
         ],
-        logo:award
+        logo:award,
+        image:awardImage,
     },
     {
         id:2,

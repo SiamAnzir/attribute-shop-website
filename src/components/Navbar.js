@@ -19,7 +19,7 @@ const NavBar = () => {
               <NavItem>
                 {" "}
                 <Nav.Link
-                  href="#products"
+                  href="/#products"
                   className="text-black text-decoration-none"
                 >
                   {" "}
@@ -32,7 +32,7 @@ const NavBar = () => {
               <NavItem>
                 {" "}
                 <Nav.Link
-                  href="#contact"
+                  href="/#contact"
                   className="text-black text-decoration-none"
                 >
                   {" "}
