@@ -1,10 +1,13 @@
 import React from "react";
-import {Container,Row,Col,Dropdown,Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import {Container,Row,Col} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBagShopping} from "@fortawesome/free-solid-svg-icons";
 import {allProducts} from "../store/AllProducts";
 
 const Products = () => {
+    /*const res = allProducts.filter((product) => product.categoryName === "Awards");
+    console.log(res);*/
     return(
         <section id="products" className="mt-5">
             <Container>
@@ -17,31 +20,20 @@ const Products = () => {
                     <Row>
                         {allProducts.map((product) => (
                             <Col className="mt-3" key={product.id} xl={3} lg={4} md={6} sm={12}>
-                                <div className="dropdown" style={{border:"2px solid red",borderRadius:'10px'}}>
-                                    <div
-                                        className="d-flex justify-content-center align-items-center dropdown"
-                                        type="button"
-                                        id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false"
-                                    >
-                                        <img src={product.logo} alt="..." height={40} width={40} />
-                                        <a className="nav-link active" style={{fontSize:'18px',paddingLeft:'4px'}}>{product.categoryName}</a>
+                                <Link to={`/product/${product.categoryName}`} style={{textDecoration:"none" , color:"black"}}>
+                                    <div className="" style={{border:"2px solid red",borderRadius:'10px'}}>
+                                        <div
+                                            className="d-flex justify-content-center align-items-center"
+                                            //type="button"
+                                            //id="dropdownMenuButton1"
+                                            //data-bs-toggle="dropdown"
+                                            //aria-expanded="false"
+                                        >
+                                            <img src={product.logo} alt="..." height={40} width={40} />
+                                            <span style={{fontSize:'18px',paddingLeft:'4px'}}>{product.categoryName}</span>
+                                        </div>
                                     </div>
-                                    <ul
-                                        className="dropdown-menu"
-                                        aria-labelledby="dropdownMenuButton1"
-                                    >
-                                        <li>
-                                            <span className="dropdown-item">Profile</span>
-                                        </li>
-                                        <li>
-                                            <a className="dropdown-item">
-                                                Log Out
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                </Link>
                             </Col>
                         ))}
                     </Row>
