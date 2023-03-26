@@ -1,22 +1,21 @@
 import logo from './logo.svg';
-import NavBar from "./components/Navbar";
-import Home from "./components/Home";
-import Products from "./components/Products";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import EachProduct from "./components/EachProduct";
 import './App.css';
 
 const App = () => {
   return (
-    <>
-        <section>
-            <NavBar></NavBar>
-            <Home></Home>
-            <Products></Products>
-            <Contact></Contact>
-            <Footer></Footer>
-        </section>
-    </>
+      <Router>
+          <Switch>
+              <Route exact path="/">
+                  <HomePage></HomePage>
+              </Route>
+              <Route path="/product/:name">
+                  <EachProduct></EachProduct>
+              </Route>
+          </Switch>
+      </Router>
   );
 }
 
