@@ -21,138 +21,170 @@ import poloImage from "../assets/products/Polo Shirt Ad.jpg";
 import tShirtImage from "../assets/products/T-Shirt  Ad.jpg";
 import umbrellaImage from "../assets/products/Umbrella Ad.jpg";
 export const allProducts = [
-    {
-        id:1,
-        categoryName:'Awards',
-        description: "Add a touch of elegance to your space with our custom-made acrylic works, perfect for corporate or personal use.",
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:award,
-        image:awardImage,
-    },
-    {
-        id:2,
-        categoryName:'Cap',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:cap
-    },
-    {
-        id:3,
-        categoryName:'Clock/Watch',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:clock
-    },
-    {
-        id:4,
-        categoryName:'Corporate Gift Box',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:giftBox
-    },
-    {
-        id:5,
-        categoryName:'ID Card',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:idCard
-    },
-    {
-        id:6,
-        categoryName:'Key Ring',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:keyRing
-    },
-    {
-        id:7,
-        categoryName:'Logo',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:logo
-    },
-    {
-        id:8,
-        categoryName:'Mug',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:mug
-    },
-    {
-        id:9,
-        categoryName:'Polo T-Shirt',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:polo
-    },
-    {
-        id:10,
-        categoryName:'Printing & Press Works',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:printPress
-    },
-    {
-        id:11,
-        categoryName:'T-Shirt',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:tShirt
-    },
-    {
-        id:12,
-        categoryName:'Umbrella',
-        subCategories: [
-            {
-                serviceId:'',
-                serviceName:'',
-            }
-        ],
-        logo:umbrella
-    },
-]
+  {
+    id: 1,
+    categoryName: "Awards",
+    description:
+      "Add a touch of elegance to your space with our custom-made acrylic works, perfect for corporate or personal use.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: award,
+    image: awardImage,
+  },
+  {
+    id: 2,
+    categoryName: "Cap",
+    description:
+      "Make your brand stand out with our trendy and personalised caps, perfect for any occasion.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: cap,
+    image: capImage,
+  },
+  {
+    id: 3,
+    categoryName: "Clock Watch",
+    description:
+      "Keep time in style with our custom-made wall clocks, available in a range of designs.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: clock,
+    image: clockImage,
+  },
+  {
+    id: 4,
+    categoryName: "Corporate Gift Box",
+    description:
+      " Impress your clients with our personalised gift boxes, filled with goodies and branded with your company logo.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: giftBox,
+    image: giftBoxImage,
+  },
+  {
+    id: 5,
+    categoryName: "ID Card",
+    description:
+      "Enhance your brand identity with our customised ID cards, perfect for showcasing your company logo and employee details.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: idCard,
+    image: idCardImage,
+  },
+  {
+    id: 6,
+    categoryName: "Key Ring",
+    description:
+      "Keep your brand top of mind with our trendy and personalised key rings, perfect for giveaways and promotions.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: keyRing,
+    image: keyRingImage,
+  },
+  {
+    id: 7,
+    categoryName: "Logo",
+    description: "",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: logo,
+    image: null,
+  },
+  {
+    id: 8,
+    categoryName: "Mug",
+    description:
+      "Start your day off right with our customised mugs, personalised with your company logo or favourite design.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: mug,
+    image: mugImage,
+  },
+  {
+    id: 9,
+    categoryName: "Polo T-Shirt",
+    description:
+      "Dress to impress with our custom-made polo shirts, perfect for corporate events or team outings.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: polo,
+    image: poloImage,
+  },
+  {
+    id: 10,
+    categoryName: "Printing & Press Works",
+    description: "",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: printPress,
+    image: null,
+  },
+  {
+    id: 11,
+    categoryName: "T-Shirt",
+    description:
+      "Make a statement with our custom-made t-shirts, perfect for promotional events or personal use.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: tShirt,
+    image: tShirtImage,
+  },
+  {
+    id: 12,
+    categoryName: "Umbrella",
+    description:
+      "Stay dry and stylish with our custom-made umbrellas, available in a range of colours and designs.",
+    subCategories: [
+      {
+        serviceId: "",
+        serviceName: "",
+      },
+    ],
+    logo: umbrella,
+    image: umbrellaImage,
+  },
+];
