@@ -32,6 +32,10 @@
   color: #61dafb;
 }
 .footer_primary {
+  //position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background: black;
 }
 
@@ -48,7 +52,7 @@
   border-radius: 40%;
   transition: 0.5s all ease-in-out;
 }
-.social_icon img:hover{
+.social_icon img:hover {
   transform: scale(1.2);
 }
 
