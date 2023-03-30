@@ -1,80 +1,80 @@
 import React from "react";
-import {Container , Row , Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import facebook from "../assets/facebook.png";
 import whatsapp from "../assets/whatsapp.png";
 import instagram from "../assets/instagram.png";
 import email from "../assets/email.png";
 import phone from "../assets/phone.png";
 const Footer = () => {
-    return(
-        <div className="footer_primary">
-            <Container>
-                <Row>
-                    <Col lg={4} className="individual_column_first">
-                        <p className="fs-5">Connect With Us</p>
-                        <div className="social_icon">
-                            <a href="https://www.facebook.com/attributeshop">
-                                <img className="img-fluid" src={facebook} alt="facebook"/>
-                            </a>
-                            <a href="https://wa.me/message/J4Z25Z623FSKP1">
-                                <img className="img-fluid" src={whatsapp} alt="whatsapp"/>
-                            </a>
-                            <a href="https://www.instagram.com/attributeshop">
-                                <img className="img-fluid" src={instagram} alt="instagram"/>
-                            </a>
-                            <a href="mailto:attributebd@gmail.com">
-                                <img className="img-fluid" src={email} alt="email"/>
-                            </a>
-                        </div>
-                    </Col>
-                    <Col lg={4} className="individual_column_first">
-                        <p className="fs-5">Address</p>
-                        <div>
-                            <p className="text-start">
-                                Ground Floor, 60 Kazi Alauddin Road, Dhaka-1000
-                            </p>
-                        </div>
-                    </Col>
-                    <Col lg={4} className="ps-5 individual_column_first">
-                        <p className="fs-5">Call Us </p>
-                        <div>
-                            <p className="text-start">
-                                <img
-                                    className="contact-us-img"
-                                    src={phone}
-                                    alt="..."
-                                    style={{ marginLeft: "" }}
-                                />
-                                <a
-                                    href="tel:+8801677409232"
-                                    style={{
-                                        textDecoration: "none",
-                                        color: "white",
-                                        fontSize:'16px',
-                                        marginLeft: "7px",
-                                    }}
-                                >
-                                    01677409232 {" ,"}
-                                </a>
-                                <a
-                                    href="tel:+8801639575993"
-                                    style={{
-                                        textDecoration: "none",
-                                        color: "white",
-                                        fontSize:'16px',
-                                        marginLeft: "7px",
-                                    }}
-                                >
-                                    01639575993
-                                </a>
-                            </p>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-    )
-}
+  return (
+    <footer className="footer_primary">
+      <Container>
+        <Row>
+          <Col lg={4} className="individual_column_first">
+            <p className="fs-5">Connect With Us</p>
+            <div className="social_icon">
+              <a href="https://www.facebook.com/attributeshop">
+                <img className="img-fluid" src={facebook} alt="facebook" />
+              </a>
+              <a href="https://wa.me/message/J4Z25Z623FSKP1">
+                <img className="img-fluid" src={whatsapp} alt="whatsapp" />
+              </a>
+              <a href="https://www.instagram.com/attributeshop">
+                <img className="img-fluid" src={instagram} alt="instagram" />
+              </a>
+              <a href="mailto:attributebd@gmail.com">
+                <img className="img-fluid" src={email} alt="email" />
+              </a>
+            </div>
+          </Col>
+          <Col lg={4} className="individual_column_first">
+            <p className="fs-5">Address</p>
+            <div>
+              <p className="text-start">
+                Ground Floor, 60 Kazi Alauddin Road, Dhaka-1000
+              </p>
+            </div>
+          </Col>
+          <Col lg={4} className="ps-5 individual_column_first">
+            <p className="fs-5">Call Us </p>
+            <div>
+              <p className="text-start">
+                <img
+                  className="contact-us-img"
+                  src={phone}
+                  alt="..."
+                  style={{ marginLeft: "" }}
+                />
+                <a
+                  href="tel:+8801677409232"
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    fontSize: "16px",
+                    marginLeft: "7px",
+                  }}
+                >
+                  01677409232 {" ,"}
+                </a>
+                <a
+                  href="tel:+8801639575993"
+                  style={{
+                    textDecoration: "none",
+                    color: "white",
+                    fontSize: "16px",
+                    marginLeft: "7px",
+                  }}
+                >
+                  01639575993
+                </a>
+              </p>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
+  );
+};
 
 export default Footer;
 /**

@@ -6,15 +6,15 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 
 const HomePage = () => {
-    return(
-        <section>
-            <NavBar></NavBar>
-            <Home></Home>
-            <Products></Products>
-            <Contact></Contact>
-            <Footer></Footer>
-        </section>
-    )
-}
+  return (
+    <section>
+      <NavBar></NavBar>
+      <Home></Home>
+      <Products></Products>
+      <Contact></Contact>
+      <Footer></Footer>
+    </section>
+  );
+};
 
 export default HomePage;
