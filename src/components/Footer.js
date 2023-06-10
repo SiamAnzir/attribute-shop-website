@@ -33,6 +33,9 @@ const Footer = () => {
               <p className="text-start">
                 Ground Floor, 60 Kazi Alauddin Road, Dhaka-1000
               </p>
+              <p className="text-start">
+                Office - Flat- A2, Shyamol Chaya-2, 7/2 Ring Road, Garden Street, Shaymoli, Adabor, Dhaka-1207
+              </p>
             </div>
           </Col>
           <Col lg={4} className="ps-5 individual_column_first">

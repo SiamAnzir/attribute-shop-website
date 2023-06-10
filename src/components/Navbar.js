@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar, NavItem, Form, Button } from "react-bootstrap";
 import logo from "../assets/attributelogo.png";
-import mainLogo from "../assets/PNG.png";
+import mainLogo from "../assets/Logo.png";
 
 const NavBar = () => {
   return (
@@ -9,7 +9,7 @@ const NavBar = () => {
       <Container>
         <Nav className="navbar-brand">
           <Nav.Link href="/" className="text-white text-decoration-none">
-            <img src={mainLogo} alt="..." height={30} />
+            <img src={mainLogo} alt="..." height={40} />
           </Nav.Link>
         </Nav>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
