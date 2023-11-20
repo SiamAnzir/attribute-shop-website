@@ -31,10 +31,10 @@ const Footer = () => {
             <p className="fs-5">Address</p>
             <div>
               <p className="text-start">
-                Ground Floor, 60 Kazi Alauddin Road, Dhaka-1000
+                Factory: Ground Floor, 60 Kazi Alauddin Road, Dhaka-1000
               </p>
               <p className="text-start">
-                Office - Flat- A2, Shyamol Chaya-2, 7/2 Ring Road, Garden Street, Shaymoli, Adabor, Dhaka-1207
+                New Market, Shop-81(Ground Floor), Gausul Azam Super Market, Dhaka 1205
               </p>
             </div>
           </Col>

@@ -2,10 +2,10 @@ import React from "react";
 import { Carousel, Container } from "react-bootstrap";
 import attribute from "../assets/PNG.png";
 import slideImage from "../assets/blackImage.png";
-import cover from "../assets/cover.jpg";
-import sliderOne from "../assets/Branding-01.jpg";
-import sliderTwo from "../assets/Branding-02.jpg";
-import sliderThree from "../assets/Branding-03.jpg";
+import cover from "../assets/cover-resized.jpg";
+import sliderOne from "../assets/Branding-01-resized.jpg";
+import sliderTwo from "../assets/Branding-02-resized.jpg";
+import sliderThree from "../assets/Branding-03-resized.jpg";
 import coverTwo from "../assets/coverTwo.jpg";
 
 const Home = () => {

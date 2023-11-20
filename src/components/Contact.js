@@ -16,7 +16,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [loader, setLoader] = useState(false);
-  const position = [23.720381, 90.405258];
+  const position = [23.733272,90.3869691];
 
   const markerIcon = new L.Icon({
     iconUrl: require("../assets/marker.png"),
@@ -77,7 +77,7 @@ const Contact = () => {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Marker position={position} icon={markerIcon}>
-                <Popup>Ground Floor, 60 Kazi Alauddin Road, Dhaka-1000</Popup>
+                <Popup>New Market, Shop-81(Ground Floor), Gausul Azam Super Market, Dhaka 1205</Popup>
               </Marker>
             </MapContainer>
           </Col>
